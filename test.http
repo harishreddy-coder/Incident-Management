@@ -1,0 +1,27 @@
+GET http://localhost:4004/odata/v4/processor/Incidents?$expand=customer
+
+###
+GET http://localhost:4004/odata/v4/processor/Customers
+
+###
+POST http://localhost:4004/odata/v4/processor/Incidents
+Content-Type: application/json
+
+{
+    "customer" : "1004155",
+    "title" : "Inverter not functional",
+    "urgency" : "H",
+    "status"  : "C"
+}
+
+###
+POST http://localhost:4004/odata/v4/admin/Customers
+Content-Type: application/json
+
+{
+    "ID" : "1004156",
+    "firstname" : "Roger",
+    "LASTNAME"  : "Wilde",
+    "EMAIL"     : "wilde.roger@demo.com",
+    "PHONE"     : "+90-204-296"
+}
