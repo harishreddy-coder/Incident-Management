@@ -20,8 +20,11 @@ Content-Type: application/json
 
 {
     "ID" : "1004156",
-    "firstname" : "Roger",
-    "LASTNAME"  : "Wilde",
-    "EMAIL"     : "wilde.roger@demo.com",
-    "PHONE"     : "+90-204-296"
+    "firstName" : "Roger",
+    "lastName"  : "Wilde",
+    "email"     : "wilde.roger@demo.com",
+    "phone"     : "+90-204-296"
 }
+
+###
+GET http://localhost:4004/odata/v4/admin/Customers
