@@ -3,16 +3,24 @@ GET http://localhost:4004/odata/v4/processor/Incidents?$expand=customer
 ###
 GET http://localhost:4004/odata/v4/processor/Customers
 
+
+###
+GET http://localhost:4004/odata/v4/processor/Incidents
+
 ###
 POST http://localhost:4004/odata/v4/processor/Incidents
 Content-Type: application/json
 
 {
-    "customer" : "1004155",
+    "customer_ID" : "1004156",
     "title" : "Inverter not functional",
-    "urgency" : "H",
-    "status"  : "C"
+    "urgency_code" : "H",
+    "status_code"  : "C"
 }
+
+
+###
+DELETE http://localhost:4004/odata/v4/processor/Incidents('3ccf474c-3881-44b7-99fb-59a2a4668418')
 
 ###
 POST http://localhost:4004/odata/v4/admin/Customers
