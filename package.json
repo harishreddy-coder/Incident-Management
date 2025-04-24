@@ -7,6 +7,7 @@
   "private": true,
   "dependencies": {
     "@cap-js/hana": "^1",
+    "@sap/approuter": "^20.3.0",
     "@sap/cds": "^8",
     "@sap/hdi-deploy": "^5.4.2",
     "@sap/xssec": "^4",
@@ -22,8 +23,8 @@
   },
   "cds": {
     "requires": {
-      "auth": "mocked",
-      "db" : "hana"
+      "auth": "xsuaa",
+      "db": "hana"
     },
     "sql": {
       "native_hana_associations": false
