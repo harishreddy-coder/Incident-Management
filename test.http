@@ -23,16 +23,20 @@ Content-Type: application/json
 DELETE http://localhost:4004/odata/v4/processor/Incidents('3ccf474c-3881-44b7-99fb-59a2a4668418')
 
 ###
-POST http://localhost:4004/odata/v4/admin/Customers
+POST http://localhost:4004/odata/v4/processor/Customers
 Content-Type: application/json
 
 {
-    "ID" : "1004156",
-    "firstName" : "Roger",
-    "lastName"  : "Wilde",
-    "email"     : "wilde.roger@demo.com",
-    "phone"     : "+90-204-296"
+    "ID" : "1004158",
+    "firstName" : "Erin",
+    "lastName"  : "Huzare",
+    "email"     : "huzare.erin@demo.com",
+    "phone"     : "+89-405-0493"
 }
+
+###
+DELETE http://localhost:4004/odata/v4/processor/Customers('1004158')
+
 
 ###
 GET http://localhost:4004/odata/v4/admin/Customers

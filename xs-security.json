@@ -26,5 +26,5 @@
     "redirect-uris": [
         "https://*.applicationstudio.cloud.sap/**"
     ]
-}
+  }
 }

@@ -1,9 +1,9 @@
 {
   "authenticationMethod": "route",
-"logout": {
+  "logout": {
     "logoutEndpoint": "/app-logout",
     "logoutPage": "/"
-},
+  },
   "routes": [
     {
       "source": "^/app/(.*)$",
@@ -11,17 +11,17 @@
       "localDir": ".",
       "cacheControl": "no-cache, no-store, must-revalidate",
       "authenticationType": "xsuaa"
-  },
-  {
+    },
+    {
       "source": "^/appconfig/",
       "localDir": ".",
       "cacheControl": "no-cache, no-store, must-revalidate"
-  },
-  {
+    },
+    {
       "source": "^/user-api(.*)",
       "target": "$1",
       "service": "sap-approuter-userapi"
-  },
+    },
     {
       "source": "^/(.*)$",
       "target": "$1",
@@ -29,5 +29,6 @@
       "csrfProtection": true,
       "authenticationType": "xsuaa"
     }
-  ]
+  ],
+  "welcomeFile": "/nsincidents"
 }
